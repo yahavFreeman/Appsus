@@ -1,0 +1,256 @@
+* {
+    box-sizing: border-box;
+}
+
+.keep-filter {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.keep-filter input {
+    border: none;
+    background-color: rgba(243, 187, 2, 0.623);
+    height: 30px;
+}
+
+path {
+    fill: whitesmoke;
+}
+
+.add-keep-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+    max-width: 500px;
+    margin: auto;
+    margin-top: 15px;
+    /* background-color: rgba(243, 187, 2); */
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    box-shadow: 1px -1px 1px 3px lightgrey;
+}
+
+.add-keep-container:hover {
+    box-shadow: 1px -1px 1px 3px rgb(163, 162, 162);
+}
+
+.add-keep-container input {
+    border: none;
+    background-color: rgba(243, 187, 2, 0.623);
+    margin-bottom: 5px;
+}
+
+.add-keep-container textarea {
+    border: none;
+    background-color: rgba(243, 187, 2, 0.623);
+}
+
+.label-container button {
+    border: none;
+    margin-left: 3px;
+}
+
+.label-container button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+
+/* keeps grid */
+
+.keeps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-rows: repeat(auto-fill, 80px);
+    gap: 10px;
+    grid-auto-flow: dense;
+}
+
+.keep-list>ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.keep-img {
+    grid-row: span 2;
+}
+
+.keep-vid {
+    grid-row: span 2;
+}
+
+.keep-todos {
+    grid-row: span 2;
+}
+
+.keep-txt {
+    grid-row: span 1;
+}
+
+
+/* keep buttons */
+
+.add-keep {
+    /* position: absolute; */
+    top: 15px;
+}
+
+.add-keep>*:hover {
+    cursor: pointer;
+}
+
+.add-input {
+    max-width: 395px;
+}
+
+.added-todo-input {
+    max-width: 140px;
+}
+
+.upper {
+    height: 25px;
+}
+
+
+/* inside the notes and the notes themselves */
+
+.add-keep-btn {
+    border: none;
+    height: 30px;
+    width: 70px;
+    border-radius: 5px;
+    background-color: rgba(243, 187, 2, 0.623);
+}
+
+.add-keep-btn:hover {
+    cursor: pointer;
+    background-color: rgba(243, 187, 2, 0.418);
+}
+
+.funcs-container {
+    padding: 3px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.funcs-container path {
+    fill: whitesmoke
+}
+
+.svg-inline--fa {
+    height: 25px;
+    width: 25px;
+    padding-top: 2px;
+}
+
+.font-changer {
+    width: 80px;
+}
+
+.note-img {
+    text-align: center;
+}
+
+.youtube-player {
+    padding: 0 5px;
+    border: none;
+    max-height: 100px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.note-img img {
+    padding: 0 5px;
+    max-height: 100px;
+    object-fit: cover;
+}
+
+.note h3 {
+    margin: 1px;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.note h3:hover {
+    cursor: pointer;
+}
+
+.note>p {
+    margin: 1px;
+    margin-inline-start: 5px;
+}
+
+.todos-lists {
+    margin-inline-start: 5px;
+}
+
+.keep-preview-container {
+    list-style: none;
+    height: fit-content;
+}
+
+.keep-preview-container>section {
+    /* border: solid 1px black; */
+    border-radius: 5px;
+}
+
+.funcs-container>*:hover {
+    cursor: pointer;
+}
+
+.note>p:hover {
+    cursor: pointer;
+}
+
+.todos-label:hover {
+    cursor: pointer;
+}
+
+.todos {
+    list-style: none;
+}
+
+.todos:hover {
+    cursor: pointer;
+}
+
+
+/* pinned color */
+
+.ylw {
+    fill: red!important;
+}
+
+
+/* crossing a done todo */
+
+.done {
+    text-decoration: line-through;
+}
+
+
+/* RESPONSIVITY */
+
+
+/* LARGE */
+
+@media (max-width: 1110px) {}
+
+
+/* MEDIUM */
+
+@media (max-width: 840px) {}
+
+
+/* SMALL */
+
+@media (max-width: 600px) {
+    .label-container button {
+        padding: 3px;
+    }
+}

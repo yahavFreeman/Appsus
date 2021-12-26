@@ -1,0 +1,78 @@
+.flex {
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.center {
+    justify-content: center;
+}
+
+.main-layout {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+/* labels */
+
+.Critical {
+    background-color: rgb(245, 185, 185);
+}
+
+.Family {
+    background-color: rgb(140, 194, 248);
+}
+
+.Work {
+    background-color: rgb(147, 228, 147);
+}
+
+.Friends {
+    background-color: rgb(255, 253, 181);
+}
+
+.Spam {
+    background-color: rgb(253, 227, 177);
+}
+
+.Memories {
+    background-color: rgb(248, 198, 233);
+}
+
+.Romantic {
+    background-color: rgb(138, 231, 240);
+}
+
+
+/* RESPONSIVITY */
+
+
+/* LARGE */
+
+@media (max-width: 1110px) {
+    .main-layout {
+        max-width: 800px;
+    }
+}
+
+
+/* MEDIUM */
+
+@media (max-width: 840px) {
+    .main-layout {
+        max-width: 550px;
+    }
+}
+
+
+/* SMALL */
+
+@media (max-width: 600px) {
+    .main-layout {
+        margin: 0 auto;
+        max-width: 500px;
+    }
+}

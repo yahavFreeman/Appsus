@@ -1,0 +1,170 @@
+@import "./apps/keep/keep.css";
+@import "./apps/book/book.css";
+@import "./apps/mail/mail.css";
+@import "./helper.css";
+
+/* @import "/css/apps/keep/keep.css";
+@import "/css/apps/mail/mail.css";
+@import "/css/apps/book/book.css";
+@import "/css/helper.css"; */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    color: rgb(75, 74, 74);
+    background-color: rgb(255, 255, 249);
+}
+
+h3,
+p {
+    margin: 0;
+}
+
+
+/* home-page */
+
+.home-page {
+    text-align: center;
+}
+
+.home-page h3 {
+    font-size: 50px;
+    padding-top: 50px;
+}
+
+.home-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 500px;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.home-container button {
+    border: none;
+    width: 120px;
+    height: 30px;
+    background-color: rgb(243, 187, 2);
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.home-container button:hover {
+    background-color: rgba(243, 187, 2, 0.418);
+    cursor: pointer;
+}
+
+.books {
+    height: 100px;
+    width: 120px;
+}
+
+.books img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/* header */
+
+.app-header {
+    background-color: rgb(243, 187, 2);
+}
+
+.haeder-container {
+    background-color: rgb(243, 187, 2);
+    font-size: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.haeder-container nav,
+.logo {
+    background-color: rgb(243, 187, 2);
+}
+
+.app-header a {
+    background-color: rgb(243, 187, 2);
+    color: rgb(75, 74, 74);
+    text-decoration: none;
+}
+
+.main-haeder {
+    background-color: rgb(243, 187, 2);
+}
+
+.app-header a:hover {
+    color: rgb(255, 251, 251);
+}
+
+.logo {
+    font-size: 20px;
+}
+
+
+/* footer */
+
+.app-footer {
+    color: aliceblue;
+    padding: 12px;
+    background-color: rgb(243, 187, 2);
+    text-align: center;
+}
+
+.footer-container p {
+    background-color: rgb(243, 187, 2);
+}
+
+.apps {
+    height: 100%;
+}
+
+
+/* user msg */
+
+.user-msg {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    padding: 10px;
+    height: 40px;
+    width: 240px;
+    background-color: rgba(255, 252, 242, 0.753);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.success {
+    border: 2px solid green;
+    color: green;
+}
+
+.error {
+    border: 2px solid red;
+    color: red;
+}
+
+.main-height {
+    height: 89vh;
+}
+
+
+/* MEDIUM */
+
+@media (max-width: 840px) {
+    .home-container {
+        gap: 10px;
+        justify-content: space-between;
+    }
+}
